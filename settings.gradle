@@ -1,0 +1,3 @@
+include ':app', ':adasFrameProcessor'
+include ':libDroiAccount'
+include ':driveAssistAndroid'

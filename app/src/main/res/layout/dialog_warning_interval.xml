@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/interval_value0"
+        style="@style/DialogValueLayout">
+
+        <TextView
+            style="@style/DialogValueText"
+            android:text="3s"/>
+
+        <ImageView
+            android:id="@+id/img_value0"
+            style="@style/DialogValueImage"/>
+    </RelativeLayout>
+
+    <View style="@style/DividerWidthView"/>
+
+    <RelativeLayout
+        android:id="@+id/interval_value1"
+        style="@style/DialogValueLayout">
+
+        <TextView
+            style="@style/DialogValueText"
+            android:text="5s"/>
+
+        <ImageView
+            android:id="@+id/img_value1"
+            style="@style/DialogValueImage"/>
+    </RelativeLayout>
+
+    <View style="@style/DividerWidthView"/>
+
+    <RelativeLayout
+        android:id="@+id/interval_value2"
+        style="@style/DialogValueLayout">
+
+        <TextView
+            style="@style/DialogValueText"
+            android:text="10s"/>
+
+        <ImageView
+            android:id="@+id/img_value2"
+            style="@style/DialogValueImage"/>
+    </RelativeLayout>
+
+    <View style="@style/DividerWidthView"/>
+
+    <Button
+        android:id="@+id/btn_cancel"
+        style="@style/DialogCancelButton"
+        android:padding="0dp"
+        android:text="@string/string_cancel"/>
+</LinearLayout>

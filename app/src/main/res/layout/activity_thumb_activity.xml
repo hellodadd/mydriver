@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.droi.edriver.ui.PhotoFileActivity">
+
+    <GridView
+        android:id="@+id/main_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dip"
+        android:layout_marginTop="44dp"
+        android:cacheColorHint="@android:color/transparent"
+        android:gravity="center"
+        android:horizontalSpacing="2dip"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="2dip"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="7"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="2dip">
+    </GridView>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/actionbar_background_color"
+        android:gravity="center_vertical">
+
+        <View
+            style="@style/DividerWidthView"
+            android:layout_alignParentTop="true"
+            android:background="@color/actionbar_bottom_color"/>
+        <!--<TextView
+            android:id="@+id/lock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/locked"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dip"
+            android:visibility="invisible"
+            />-->
+        <TextView
+            android:id="@+id/option"
+            style="@style/ActionbarTextView"
+            android:layout_centerInParent="true"
+            android:text="@string/choice"/>
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dip"
+            android:src="@drawable/ic_delete"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+</RelativeLayout>

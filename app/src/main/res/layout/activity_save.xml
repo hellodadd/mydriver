@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:segment="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/actionbar_height"
+            android:animateLayoutChanges="true"
+            android:background="@color/actionbar_background_color">
+
+            <TextView
+                android:id="@+id/actionbar_back"
+                style="@style/ActionbarBackTextView"/>
+
+            <TextView
+                android:id="@+id/actionbar_title"
+                style="@style/ActionbarTitleTextView"
+                android:text="@string/actionbar_title_select"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/surplus_size"
+                style="@style/ActionbarTextView"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/titlebar_padding"/>
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="@dimen/tab_widget_width"
+                android:layout_height="@dimen/tab_widget_height"
+                android:layout_centerInParent="true"
+                android:divider="@null"
+                android:fadingEdge="none"
+                android:visibility="gone"/>
+
+            <com.droi.edriver.view.SegmentedGroup
+                android:id="@+id/segmented_tabs"
+                android:layout_width="@dimen/tab_widget_width"
+                android:layout_height="@dimen/tab_widget_height"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal"
+                segment:sc_border_width="2px"
+                segment:sc_tint_color="@color/actionbar_backtext_color"
+                segment:sc_unchecked_text_color="@color/actionbar_backtext_color">
+
+                <RadioButton
+                    android:id="@+id/radio_tab0"
+                    style="@style/SegmentRadioButton"
+                    android:text="@string/video"
+                    android:textSize="14dp"/>
+
+                <RadioButton
+                    android:id="@+id/radio_tab1"
+                    style="@style/SegmentRadioButton"
+                    android:text="@string/photo"
+                    android:textSize="14dp"/>
+
+            </com.droi.edriver.view.SegmentedGroup>
+
+            <View
+                style="@style/DividerWidthView"
+                android:layout_alignParentBottom="true"
+                android:background="@color/actionbar_bottom_color"/>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="0dip"
+            android:layout_marginRight="0dip"/>
+    </TabHost>
+
+</LinearLayout>

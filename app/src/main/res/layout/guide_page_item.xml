@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:src="@drawable/guide2">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/guide_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="28dp"
+            android:textColor="@color/guide_textcolor"
+            android:textSize="@dimen/guide_title_textsize"/>
+
+        <TextView
+            android:id="@+id/guide_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="16dp"
+            android:textColor="@color/guide_textcolor"
+            android:textSize="@dimen/guide_content_textsize"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="164dip"
+        android:background="@drawable/start_button_bmp"
+        android:text="@string/start"
+        android:textColor="@color/title_bar_textcolor"
+        android:textSize="@dimen/guide_title_textsize"
+        android:visibility="invisible"/>
+</FrameLayout>

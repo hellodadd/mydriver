@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/settings_background_color"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.droi.edriver.ui.DebugActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_previe_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="预览分辨率:"/>
+
+        <Spinner
+            android:id="@+id/previe_size"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="模拟车速: "/>
+
+            <CheckBox
+                android:id="@+id/switch_speed"
+                style="@style/SettingSwitchButton"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/adas_speed"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:imeOptions="flagNoExtractUi|flagNoFullscreen"
+            android:inputType="number"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="adasCarLeft:"/>
+
+        <EditText
+            android:id="@+id/adas_car_left"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:imeOptions="flagNoExtractUi|flagNoFullscreen"
+            android:inputType="numberDecimal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="adasCarRight:"/>
+
+        <EditText
+            android:id="@+id/adas_car_right"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:imeOptions="flagNoExtractUi|flagNoFullscreen"
+            android:inputType="numberDecimal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="adasCarTop:"/>
+
+        <EditText
+            android:id="@+id/adas_car_top"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:imeOptions="flagNoExtractUi|flagNoFullscreen"
+            android:inputType="numberDecimal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="adasLaneTop:"/>
+
+        <EditText
+            android:id="@+id/adas_lane_top"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:imeOptions="flagNoExtractUi|flagNoFullscreen"
+            android:inputType="numberDecimal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="adasCarScale:"/>
+
+        <EditText
+            android:id="@+id/adas_car_scale"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:imeOptions="flagNoExtractUi|flagNoFullscreen"
+            android:inputType="numberDecimal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="adasLaneScale:"/>
+
+        <EditText
+            android:id="@+id/adas_lane_scale"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:imeOptions="flagNoExtractUi|flagNoFullscreen"
+            android:inputType="numberDecimal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="adasCarMiniSize:"/>
+
+        <EditText
+            android:id="@+id/adas_mini_size"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:imeOptions="flagNoExtractUi|flagNoFullscreen"
+            android:inputType="number"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="adasCarThreshold:"/>
+
+        <EditText
+            android:id="@+id/adas_car_threshold"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:imeOptions="flagNoExtractUi|flagNoFullscreen"
+            android:inputType="number"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="adasCarAlarmTime:"/>
+
+        <EditText
+            android:id="@+id/adas_car_alarmtime"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:imeOptions="flagNoExtractUi|flagNoFullscreen"
+            android:inputType="numberDecimal"/>
+    </LinearLayout>
+</ScrollView>

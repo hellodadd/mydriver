@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context="com.droi.edriver.ui.MainActivity">
+
+    <com.droi.edriver.view.CameraSurface
+        android:id="@+id/camera_surface"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:onClick="onClick"/>
+
+    <com.droi.edriver.view.DrawLaneView
+        android:id="@+id/draw_lane_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <com.droi.edriver.view.DrawCarView
+        android:id="@+id/draw_car_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <include layout="@layout/layout_titlebar"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/home_page_button_paddingleft"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/take_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:src="@drawable/btn_camera_selector"/>
+
+        <com.droi.edriver.view.ProgressWheel
+            android:id="@+id/start_recoder"
+            android:layout_width="@dimen/progressbar_size"
+            android:layout_height="@dimen/progressbar_size"
+            android:layout_marginTop="@dimen/button_interval"
+            android:background="@drawable/btn_video_selector"
+            android:onClick="onClick"
+            ProgressWheel:barColor="@color/progress_color"
+            ProgressWheel:barWidth="@dimen/progressbar_split_width"
+            ProgressWheel:rimWidth="1dp"
+            ProgressWheel:spinSpeed="1dp">
+        </com.droi.edriver.view.ProgressWheel>
+    </LinearLayout>
+
+    <include layout="@layout/layout_arcview"/>
+
+    <RelativeLayout
+        android:id="@+id/close_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/close_screen_color"
+        android:onClick="onClick"
+        android:visibility="invisible">
+    </RelativeLayout>
+</RelativeLayout>

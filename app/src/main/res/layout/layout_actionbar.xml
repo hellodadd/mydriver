@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/actionbar_height"
+    android:background="@color/actionbar_background_color">
+
+    <TextView
+        android:id="@+id/actionbar_back"
+        style="@style/ActionbarBackTextView"/>
+
+    <TextView
+        android:id="@+id/actionbar_title"
+        style="@style/ActionbarTitleTextView"/>
+
+    <View
+        style="@style/DividerWidthView"
+        android:layout_alignParentBottom="true"
+        android:background="@color/actionbar_bottom_color"/>
+
+</RelativeLayout>

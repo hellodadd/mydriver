@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.droi.edriver.ui.EdriverSettingsActivity">
+
+    <include layout="@layout/layout_actionbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/settings_background_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <View style="@style/DividerLargeView"/>
+
+            <View style="@style/DividerWidthView"/>
+            <!--  <LinearLayout
+              style="@style/SettingItemLayout">
+
+            <TextView
+                  style="@style/SettingItemTitleTextView"
+                  android:text="@string/settings_title_add_watermark"/>
+
+              <CheckBox
+                  android:id="@+id/switch_add_watermark"
+                  style="@style/SettingSwitchButton"/>
+          </LinearLayout>
+
+          <View style="@style/DividerView"/>-->
+
+            <LinearLayout
+                style="@style/SettingItemLayout">
+
+                <TextView
+                    style="@style/SettingItemTitleTextView"
+                    android:text="@string/settings_title_auto_screen"/>
+
+                <CheckBox
+                    android:id="@+id/switch_auto_screen"
+                    style="@style/SettingSwitchButton"/>
+            </LinearLayout>
+
+            <View style="@style/DividerView"/>
+
+            <LinearLayout
+                style="@style/SettingItemLayout"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/SettingItemTitleTextView"
+                    android:layout_width="match_parent"
+                    android:text="@string/settings_title_max_storage"/>
+
+                <com.droi.edriver.view.SegmentedGroup
+                    android:id="@+id/segmented_max_storage"
+                    style="@style/SegmentedGroup">
+
+                    <RadioButton
+                        android:id="@+id/radio_max_storage0"
+                        style="@style/SegmentRadioButton"
+                        android:text="1G"/>
+
+                    <RadioButton
+                        android:id="@+id/radio_max_storage1"
+                        style="@style/SegmentRadioButton"
+                        android:text="2G"/>
+
+                    <RadioButton
+                        android:id="@+id/radio_max_storage2"
+                        style="@style/SegmentRadioButton"
+                        android:text="4G"/>
+
+                    <RadioButton
+                        android:id="@+id/radio_max_storage3"
+                        style="@style/SegmentRadioButton"
+                        android:text="8G"/>
+                </com.droi.edriver.view.SegmentedGroup>
+            </LinearLayout>
+
+            <View style="@style/DividerView"/>
+
+            <LinearLayout
+                style="@style/SettingItemLayout"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/SettingItemTitleTextView"
+                    android:layout_width="match_parent"
+                    android:text="@string/settings_title_clarity"/>
+
+                <com.droi.edriver.view.SegmentedGroup
+                    android:id="@+id/segmented_clarity"
+                    style="@style/SegmentedGroup">
+
+                    <RadioButton
+                        android:id="@+id/radio_clarity0"
+                        style="@style/SegmentRadioButton"
+                        android:text="@string/settings_value_clarity0"/>
+
+                    <RadioButton
+                        android:id="@+id/radio_clarity1"
+                        style="@style/SegmentRadioButton"
+                        android:text="@string/settings_value_clarity1"/>
+
+                    <RadioButton
+                        android:id="@+id/radio_clarity2"
+                        style="@style/SegmentRadioButton"
+                        android:text="@string/settings_value_clarity2"/>
+
+                </com.droi.edriver.view.SegmentedGroup>
+            </LinearLayout>
+
+            <View style="@style/DividerView"/>
+
+            <LinearLayout
+                style="@style/SettingItemLayout"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/SettingItemTitleTextView"
+                    android:layout_width="match_parent"
+                    android:text="@string/settings_title_video_time"/>
+
+                <com.droi.edriver.view.SegmentedGroup
+                    android:id="@+id/segmented_video_time"
+                    style="@style/SegmentedGroup">
+
+                    <RadioButton
+                        android:id="@+id/radio_video_time0"
+                        style="@style/SegmentRadioButton"
+                        android:text="@string/settings_value_video_time0"/>
+
+                    <RadioButton
+                        android:id="@+id/radio_video_time1"
+                        style="@style/SegmentRadioButton"
+                        android:text="@string/settings_value_video_time1"/>
+
+                </com.droi.edriver.view.SegmentedGroup>
+
+            </LinearLayout>
+
+            <View style="@style/DividerWidthView"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

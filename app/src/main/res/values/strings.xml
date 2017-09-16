@@ -1,0 +1,136 @@
+<resources>
+    <string name="app_name">EDriver</string>
+    <string name="actionbar_back">Back</string>
+    <string name="actionbar_title_settings">Settings</string>
+    <string name="actionbar_title_settings2">Tachograph settings</string>
+    <string name="actionbar_title_about">About us</string>
+    <string name="actionbar_title_select">Select items</string>
+    <string name="actionbar_title_photo">View photos</string>
+    <string name="actionbar_title_login">Login</string>
+    <string name="actionbar_title_userinfo">User info</string>
+    <string name="actionbar_right_save">Save</string>
+    <string name="settings_title_edriver_settings">Tachograph settings</string>
+    <string name="settings_title_assistance_mode">Drive assistance mode</string>
+    <string name="settings_title_minimum_speed">Alarm minimum speed</string>
+    <string name="settings_title_warning_interval">Departure warning time interval</string>
+    <string name="settings_title_lane_recognition">Lane recognition</string>
+    <string name="settings_title_lane_warning">Lane Departure Warning</string>
+    <string name="settings_title_collision_warning">Forward collision warning</string>
+    <string name="settings_title_add_watermark">Added watermark</string>
+    <string name="settings_title_auto_screen">Auto turn off the screen</string>
+    <string name="settings_title_max_storage">Maximum storage space</string>
+    <string name="settings_title_clarity">Clarity</string>
+    <string name="settings_title_video_time">A single video time</string>
+    <string name="userinfo_title_nickname">Nickname</string>
+    <string name="userinfo_title_sex">Sex</string>
+    <string name="userinfo_title_age">Age</string>
+    <string name="userinfo_title_car">Car</string>
+    <string name="userinfo_logout">Sign out</string>
+    <string name="userinfo_titlebar_edit">Edit userinfo</string>
+    <string name="userinfo_hint_nickname">Please enter a nickname</string>
+    <string name="userinfo_hint_car">Please enter a car</string>
+    <string name="userinfo_hint_edit_limit">Not more than %1$s characters</string>
+    <string name="userinfo_label_birth">Born in</string>
+    <string name="userinfo_save_success">Profile saved</string>
+    <string name="userinfo_save_fail">For unknown reasons, failed to save</string>
+    <string name="userinfo_delete_account_hint">Log will stop and delete the data, whether to continue?</string>
+    <string name="userinfo_hint_no_nickname">Nickname can not be empty!</string>
+    <string name="userinfo_hint_no_car">Models can not be empty!</string>
+    <string name="userinfo_hint_no_change">Information Unchanged</string>
+    <string name="userinfo_hint_saving">Saving, please wait!</string>
+    <string name="no_sdcard">No SD card</string>
+    <string name="video">video</string>
+    <string name="photo">photo</string>
+    <string name="cancle">Cancle</string>
+    <string name="choice">Choice</string>
+    <string name="settings_value_clarity0">Low</string>
+    <string name="settings_value_clarity1">Middle</string>
+    <string name="settings_value_clarity2">High</string>
+    <string name="settings_value_video_time0">3 minutes</string>
+    <string name="settings_value_video_time1">5 minutes</string>
+    <string name="string_cancel">Cancel</string>
+    <string name="string_ok">OK</string>
+    <string name="string_go">Go</string>
+    <string name="string_reminder">Reminder</string>
+    <string name="string_storage_short">Insufficient storage space 250MB, please clean.</string>
+    <string name="string_button_login">login/Register</string>
+    <string name="trip_save_succ">The selected file stored in the photo album</string>
+    <string name="trip_save_failed">Please select the file to be saved</string>
+    <string name="trip_del_failed">delete failed</string>
+    <string name="trip_del_suc">delete succeed</string>
+    <string name="file_no_exist">file does not exist</string>
+    <string name="close_video_failed">"Failed to shut down the video"</string>
+    <string name="video_unsupport_1080p">Does not support 1080p, switch to 720P</string>
+    <string name="video_unsupport_720p">Does not support 720P, switch to 480P</string>
+    <string name="about_our_title1">About app</string>
+    <string name="about_our_title2">Company</string>
+    <string name="about_our_title3">Feedback</string>
+    <string name="about_our_title4">Address</string>
+    <string name="about_our_title5">Phone number</string>
+    <string name="about_our_title6">Fax</string>
+    <string name="about_our_title7">WeChat</string>
+    <string name="about_our_title8">Website</string>
+    <string name="about_our_value1">EDriver is a professional set of driving record, driving assistance in one of the APP,
+        based on our own research and development Droi ADAS visual recognition technology,
+        lane recognition, lane departure warning, forward collision warning and other functions,
+        is a free, energy effectively improve the APP ability to drive safely.</string>
+    <string name="about_our_value2">Shanghai Droi Technology Co., Ltd. is one of the high-tech gene mobile Internet company,
+        focused on the hardware and software design phone, tablet, smart wearable products,
+        mobile Internet and networking product development, system building and cloud computing services .</string>
+    <string name="about_our_value3">WeChat subscription number“卓易智能科技—易查—意见反馈”。</string>
+    <string name="about_our_value4">16F, Blk A, New CHJ International Business Centre No.391 Gui Ping Road Xuhui District Shanghai China</string>
+    <string name="about_our_value5">021—34768319</string>
+    <string name="about_our_value6">021—34768300</string>
+    <string name="about_our_value7">卓易云汇智能技术有限公司</string>
+    <string name="about_our_value8">www.droi.com</string>
+    <string name="can_not_delete">Contains locked files that cannot be deleted.</string>
+    <string name="locked">lock</string>
+    <string name="unlocked">unlock</string>
+    <string name="delete_one_failed">Has been locked, can not be deleted, please unlock</string>
+    <string name="no_support_videosize">Do not support the current resolution, please modify the definition</string>
+    <string name="is_recordering">Is video, can not take pictures</string>
+
+    <string name="gps_not_enable">GPS is not available, the display speed and collision avoidance alarm function will not work properly.
+        Whether to open GPS?</string>
+    <string name="guide_title1">Driving record function</string>
+    <string name="guide_title2">Driving assistance</string>
+    <string name="guide_content1">Video and other functions to allow you to record the scenery along the way</string>
+    <string name="guide_content2">in front of the vehicle detection, identification, measurement, etc., can do early warning</string>
+    <string name="start">Start</string>
+    <string name="dialog_title">Remind</string>
+    <string name="dialog_delete_msg">Are you sure you want to delete the selected file?</string>
+    <string name="pic_saved">Picture has been saved</string>
+    <string name="auto_delete_failed">Space is not enough and can not be deleted, please manually delete</string>
+    <string name="get_gps_failed">Request GPS location failed</string>
+    <string name="dialog_delete_current_msg">Are you sure you want to delete the file?</string>
+    <string name="pic_all_delete">The picture has been cleared</string>
+    <string name="min_video_time">The video for a minimum of 3 seconds</string>
+    <string name="out_of_space">NO Space</string>
+    <string name="error_cannot_open_camera">Initialize the camera fails, check that the camera is normal or permission settings!</string>
+    <string name="lib_droi_account_name_regular">._@0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+
+    <string name="islasted_version">Is the latest version</string>
+    <string name="check_update_running">Checking update, please wait……</string>
+    <string name="download_running">Downloading, please wait……</string>
+    <string name="please_insert_sd_card">Please insert the SD card!</string>
+    <string name="space_not_enough">Lack of SD card space!</string>
+    <string name="alert_btn_install">Install</string>
+    <string name="alert_btn_no_install">Cancel</string>
+    <string name="alert_btn_yes">Update</string>
+    <string name="alert_btn_no">Do not update</string>
+    <string name="alert_title">EDriver new version</string>
+    <string name="alert_msg">Found a new version is updated?</string>
+    <string name="Surplus">Remaining:</string>
+    <string name="download_notification">The download is complete, click install!！</string>
+    <string name="canot_getsize">Unable to get the file size</string>
+    <string name="has_new_download">Start the download, please wait!</string>
+    <string name="update_downloading">EDriver is downloading</string>
+    <string name="download_complete">Download complete</string>
+    <string name="must_update">Do not install this update, the application will not work!</string>
+
+    <string name="account_title_account">Account:</string>
+    <string name="account_title_pwd">Password:</string>
+    <string name="account_title_code">Codes:</string>
+    <string name="account_title_email">E-mail:</string>
+
+</resources>

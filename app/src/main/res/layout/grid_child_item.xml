@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout
+    android:id="@+id/framelayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.droi.edriver.view.MyImageView
+        android:id="@+id/child_image"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:focusable="false"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_thumb_pic"/>
+
+    <ImageView
+        android:id="@+id/video_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_videoplay"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/child_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:focusable="false"
+        android:src="@drawable/ic_select"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/lock_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|bottom"
+        android:src="@drawable/ic_locked"
+        android:visibility="invisible"/>
+</FrameLayout>

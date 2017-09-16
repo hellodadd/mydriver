@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/settings_background_color"
+    android:orientation="vertical"
+    tools:context="com.droi.edriver.ui.UserInfoActivity">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:background="@color/actionbar_background_color">
+
+        <TextView
+            android:id="@+id/actionbar_back"
+            style="@style/ActionbarBackTextView"/>
+
+        <TextView
+            android:id="@+id/actionbar_title"
+            style="@style/ActionbarTitleTextView"
+            android:text="@string/actionbar_title_userinfo"/>
+
+        <TextView
+            android:id="@+id/actionbar_save"
+            style="@style/ActionbarTextView"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/titlebar_padding"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:text="@string/actionbar_right_save"/>
+
+        <View
+            style="@style/DividerWidthView"
+            android:layout_alignParentBottom="true"
+            android:background="@color/actionbar_bottom_color"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/actionbar_title"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/settings_background_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <View style="@style/DividerLargeView"/>
+
+            <View style="@style/DividerWidthView"/>
+
+            <LinearLayout
+                android:id="@+id/btn_nick_name"
+                style="@style/SettingItemLayout"
+                android:onClick="onClick">
+
+                <TextView
+                    style="@style/SettingItemTitleTextView"
+                    android:text="@string/userinfo_title_nickname"/>
+
+                <TextView
+                    android:id="@+id/tv_nick_name"
+                    style="@style/SettingItemValueTextView"
+                    android:drawableRight="@drawable/set_right_arrow"
+                    android:hint="@string/userinfo_hint_nickname"/>
+
+            </LinearLayout>
+
+            <View style="@style/DividerView"/>
+
+            <LinearLayout
+                android:id="@+id/btn_sex"
+                style="@style/SettingItemLayout"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/SettingItemTitleTextView"
+                    android:text="@string/userinfo_title_sex"/>
+
+                <ImageView
+                    android:id="@+id/img_sex_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:onClick="onClick"
+                    android:src="@drawable/sex_male_on"/>
+
+                <View
+                    android:layout_width="2px"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/settings_background_color"/>
+
+                <ImageView
+                    android:id="@+id/img_sex_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40dp"
+                    android:onClick="onClick"
+                    android:src="@drawable/sex_female_off"/>
+
+            </LinearLayout>
+
+            <View style="@style/DividerView"/>
+
+            <LinearLayout
+                android:id="@+id/btn_age"
+                style="@style/SettingItemLayout"
+                android:onClick="onClick">
+
+                <TextView
+                    style="@style/SettingItemTitleTextView"
+                    android:text="@string/userinfo_title_age"/>
+
+                <TextView
+                    android:id="@+id/tv_age"
+                    style="@style/SettingItemValueTextView"
+                    android:drawableRight="@drawable/set_right_arrow"/>
+
+            </LinearLayout>
+
+            <View style="@style/DividerView"/>
+
+            <LinearLayout
+                android:id="@+id/btn_car"
+                style="@style/SettingItemLayout"
+                android:onClick="onClick">
+
+                <TextView
+                    style="@style/SettingItemTitleTextView"
+                    android:text="@string/userinfo_title_car"/>
+
+                <TextView
+                    android:id="@+id/tv_car"
+                    style="@style/SettingItemValueTextView"
+                    android:drawableRight="@drawable/set_right_arrow"
+                    android:hint="@string/userinfo_hint_car"/>
+
+            </LinearLayout>
+
+            <View style="@style/DividerWidthView"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_logout"
+        style="@style/AccountOkButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp"
+        android:onClick="onClick"
+        android:text="@string/userinfo_logout"/>
+</LinearLayout>

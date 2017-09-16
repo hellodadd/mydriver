@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/settings_background_color"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/account_actionbar_height"
+        android:background="@color/actionbar_background_color">
+
+        <TextView
+            android:id="@+id/title_imageview"
+            style="@style/ActionbarBackTextView"
+            android:onClick="onBack"/>
+
+        <TextView
+            android:id="@+id/actionbar_title"
+            style="@style/ActionbarTitleTextView"
+            android:text="@string/lib_droi_account_send_email"/>
+
+        <View
+            style="@style/DividerWidthView"
+            android:layout_alignParentBottom="true"
+            android:background="@color/actionbar_bottom_color"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/lib_droi_account_global_margin_top"
+        android:src="@drawable/lib_droi_account_email_icon"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/lib_droi_account_email_sened_text"/>
+
+        <TextView
+            android:id="@+id/lib_droi_account_tv_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/lib_droi_account_btn_resend"
+        style="@style/AccountOkButton"
+        android:layout_marginTop="@dimen/account_ok_top_margin"
+        android:text="@string/lib_droi_account_resend_email"/>
+
+    <Button
+        android:id="@+id/lib_droi_account_btn_finish"
+        style="@style/AccountOkButton"
+        android:layout_marginTop="20dp"
+        android:text="@string/lib_droi_account_finish"/>
+
+</LinearLayout>

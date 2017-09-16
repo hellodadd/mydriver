@@ -1,0 +1,237 @@
+<resources>
+
+    <style name="ActionbarBackTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:drawableLeft">@drawable/ic_actionbar_back_selector</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:onClick">onClick</item>
+        <item name="android:text">@string/actionbar_back</item>
+        <item name="android:textColor">@drawable/actionbar_back_selector</item>
+        <item name="android:textSize">@dimen/actionbar_back_textsize</item>
+    </style>
+
+    <style name="ActionbarTitleTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/actionbar_title_textsize</item>
+    </style>
+
+    <style name="ActionbarTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:text">@string/actionbar_back</item>
+        <item name="android:textColor">@drawable/actionbar_back_selector</item>
+        <item name="android:textSize">@dimen/actionbar_back_textsize</item>
+    </style>
+
+    <style name="DividerView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/divider_height</item>
+        <item name="android:layout_marginLeft">@dimen/setting_list_left_margin</item>
+        <item name="android:background">@color/settings_item_divider_color</item>
+    </style>
+
+    <style name="DividerLargeView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:background">@color/settings_background_color</item>
+    </style>
+
+    <style name="DividerWidthView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/divider_height</item>
+        <item name="android:background">@color/settings_item_divider_color</item>
+    </style>
+
+    <style name="SettingItemLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/setting_list_item_height</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:background">@drawable/setting_item_background</item>
+    </style>
+
+    <style name="SettingItemTitleTextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/setting_list_item_height</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingLeft">@dimen/setting_list_left_margin</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:text">SettingItemWithoutRowTextView</item>
+    </style>
+
+    <style name="SettingItemValueTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/setting_list_item_height</item>
+        <item name="android:paddingRight">@dimen/setting_list_right_margin</item>
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">#8e8e93</item>
+        <item name="android:drawablePadding">12dp</item>
+    </style>
+
+    <style name="SettingSwitchButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/setting_list_right_margin</item>
+        <item name="android:button">@drawable/switch_button</item>
+    </style>
+
+    <style name="SegmentedGroup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/setting_list_left_margin</item>
+        <item name="android:layout_marginRight">@dimen/setting_list_right_margin</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="sc_tint_color">#11b92d</item>
+        <item name="sc_border_width">2px</item>
+    </style>
+
+    <style name="SegmentRadioButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:minHeight">32dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:text">Segment</item>
+    </style>
+
+    <style name="SettingDialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="DialogValueLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dialog_value_height</item>
+        <item name="android:background">@drawable/setting_item_background</item>
+    </style>
+
+    <style name="DialogValueText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:text">DialogValueText</item>
+        <item name="android:textSize">@dimen/dialog_value_text_size</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="DialogValueImage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">370dp</item>
+        <item name="android:src">@drawable/dialog_value_selected</item>
+        <item name="android:background">@null</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="DialogCancelButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dialog_value_height</item>
+        <item name="android:background">@drawable/setting_item_background</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:text">DialogCancelButton</item>
+        <item name="android:textSize">@dimen/dialog_value_text_size</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="DialogShowAnim" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="@android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+
+    <style name="MainMenuButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:alpha">0</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:onClick">onClick</item>
+    </style>
+
+    <style name="AboutOurValueTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">AboutOurTitleTextView</item>
+        <item name="android:textColor">#2a2a2a</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="AccountItemLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="AccountTitleTextView">
+        <item name="android:layout_width">84dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">#2a2a2a</item>
+        <item name="android:textSize">@dimen/account_style_text_size</item>
+    </style>
+
+    <style name="AccountEditText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@null</item>
+        <item name="android:paddingRight">@dimen/account_edit_right_padding</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textColorHint">@color/lib_droi_account_edit_text_color</item>
+        <item name="android:textSize">@dimen/account_style_text_size</item>
+        <item name="android:imeOptions">flagNoExtractUi|flagNoFullscreen</item>
+    </style>
+
+    <style name="AccountEditPasswdText" parent="LibDroiAccountPasswordStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@null</item>
+        <item name="android:paddingRight">@dimen/account_edit_right_padding</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textColorHint">@color/lib_droi_account_edit_text_color</item>
+        <item name="android:textSize">@dimen/account_style_text_size</item>
+        <item name="android:imeOptions">flagNoExtractUi|flagNoFullscreen</item>
+    </style>
+
+    <style name="AccountAutoCompleteTextView" parent="AccountEditText">
+        <item name="android:enabled">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:digits">@string/lib_droi_account_name_regular</item>
+    </style>
+
+    <style name="AccountOkButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/login_button_selector</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View style="@style/DividerView"/>
+
+    <LinearLayout
+        android:id="@+id/btn_min_speed"
+        style="@style/SettingItemLayout"
+        android:onClick="onClick">
+
+        <TextView
+            style="@style/SettingItemTitleTextView"
+            android:text="@string/settings_title_minimum_speed"/>
+
+        <TextView
+            android:id="@+id/tv_minimum_speed"
+            style="@style/SettingItemValueTextView"
+            android:drawableRight="@drawable/set_right_arrow"/>
+
+    </LinearLayout>
+
+    <View style="@style/DividerView"/>
+
+    <LinearLayout
+        android:id="@+id/btn_warn_interval"
+        style="@style/SettingItemLayout"
+        android:onClick="onClick">
+
+        <TextView
+            style="@style/SettingItemTitleTextView"
+            android:text="@string/settings_title_warning_interval"/>
+
+        <TextView
+            android:id="@+id/tv_warn_interval"
+            style="@style/SettingItemValueTextView"
+            android:drawableRight="@drawable/set_right_arrow"/>
+
+    </LinearLayout>
+
+    <View style="@style/DividerView"/>
+
+    <LinearLayout
+        style="@style/SettingItemLayout">
+
+        <TextView
+            style="@style/SettingItemTitleTextView"
+            android:text="@string/settings_title_lane_recognition"/>
+
+        <CheckBox
+            android:id="@+id/switch_lane_recognition"
+            style="@style/SettingSwitchButton"/>
+    </LinearLayout>
+
+    <View style="@style/DividerView"/>
+
+    <LinearLayout
+        style="@style/SettingItemLayout">
+
+        <TextView
+            style="@style/SettingItemTitleTextView"
+            android:text="@string/settings_title_lane_warning"/>
+
+        <CheckBox
+            android:id="@+id/switch_lane_warning"
+            style="@style/SettingSwitchButton"/>
+    </LinearLayout>
+
+    <View style="@style/DividerView"/>
+
+    <LinearLayout
+        style="@style/SettingItemLayout">
+
+        <TextView
+            style="@style/SettingItemTitleTextView"
+            android:text="@string/settings_title_collision_warning"/>
+
+        <CheckBox
+            android:id="@+id/switch_collision_warning"
+            style="@style/SettingSwitchButton"/>
+    </LinearLayout>
+</LinearLayout>

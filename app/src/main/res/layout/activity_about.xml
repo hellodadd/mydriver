@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/settings_background_color"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_actionbar"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/about_logo"/>
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="V1.01"
+        android:textColor="#1dc11d"
+        android:textSize="14dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/AboutOurValueTextView"
+            android:text="Tel："/>
+
+        <TextView
+            android:id="@+id/tv_phone"
+            style="@style/AboutOurValueTextView"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:text="@string/about_our_value5"
+            android:textColor="#36abd7"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            style="@style/AboutOurValueTextView"
+            android:text="Fax："/>
+
+        <TextView
+            android:id="@+id/tv_fax"
+            style="@style/AboutOurValueTextView"
+
+            android:clickable="true"
+            android:onClick="onClick"
+            android:text="@string/about_our_value6"
+            android:textColor="#36abd7"/>
+    </LinearLayout>
+
+    <TextView
+        style="@style/AboutOurValueTextView"
+        android:layout_marginTop="16dp"
+        android:text="@string/about_our_value8"/>
+
+    <TextView
+        style="@style/AboutOurValueTextView"
+        android:layout_marginTop="10dp"
+        android:text="@string/about_our_value7"
+        android:textSize="12dp"/>
+
+    <TextView
+        style="@style/AboutOurValueTextView"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="11dp"
+        android:text="@string/about_our_value4"
+        android:textSize="11dp"/>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.PhotosDetialActivity">
+
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/layout_actionbar"/>
+
+    <RelativeLayout
+        android:id="@+id/bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:layout_alignParentBottom="true">
+
+        <View
+            style="@style/DividerWidthView"
+            android:layout_alignParentTop="true"
+            android:background="@color/actionbar_bottom_color"/>
+
+        <TextView
+            android:id="@+id/lock_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/locked"
+            android:textColor="@color/save_titlebar_textcolor"
+            android:textSize="16dip"/>
+
+        <ImageView
+            android:id="@+id/delete_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dip"
+            android:src="@drawable/ic_delete"/>
+    </RelativeLayout>
+
+    <com.droi.edriver.view.DetialGallery
+        android:id="@+id/photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottombar"
+        android:layout_below="@id/actionbar"
+        android:layout_centerInParent="true"
+        android:alwaysDrawnWithCache="true"/>
+</RelativeLayout>

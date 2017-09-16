@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/btn_light"
+        style="@style/MainMenuButton"
+        android:src="@drawable/ic_more_light_on_selector"/>
+
+    <ImageView
+        android:id="@+id/btn_setting"
+        style="@style/MainMenuButton"
+        android:src="@drawable/ic_more_setting_selector"/>
+
+    <ImageView
+        android:id="@+id/btn_save"
+        style="@style/MainMenuButton"
+        android:src="@drawable/ic_more_save_selector"/>
+
+    <ImageView
+        android:id="@+id/btn_about"
+        style="@style/MainMenuButton"
+        android:src="@drawable/ic_more_about_selector"/>
+
+    <ImageView
+        android:id="@+id/btn_menu"
+        style="@style/MainMenuButton"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:alpha="1"
+        android:src="@drawable/menu_icon"
+        android:visibility="visible"/>
+
+</merge>

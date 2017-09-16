@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.droi.edriver.ui.SettingsActivity">
+
+    <include layout="@layout/layout_actionbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/settings_background_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <View style="@style/DividerLargeView"/>
+
+            <View style="@style/DividerWidthView"/>
+
+            <TextView
+                android:id="@+id/button_debug"
+                style="@style/SettingItemTitleTextView"
+                android:layout_width="match_parent"
+                android:background="@drawable/setting_item_background"
+                android:clickable="true"
+                android:drawableRight="@drawable/set_right_arrow"
+                android:onClick="onClick"
+                android:paddingRight="@dimen/setting_list_right_margin"
+                android:text="调试参数"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/button_edriver_setting"
+                style="@style/SettingItemTitleTextView"
+                android:layout_width="match_parent"
+                android:background="@drawable/setting_item_background"
+                android:clickable="true"
+                android:drawableRight="@drawable/set_right_arrow"
+                android:onClick="onClick"
+                android:paddingRight="@dimen/setting_list_right_margin"
+                android:text="@string/settings_title_edriver_settings"/>
+
+            <View style="@style/DividerWidthView"/>
+
+            <View style="@style/DividerLargeView"/>
+
+            <View style="@style/DividerWidthView"/>
+
+            <LinearLayout
+                style="@style/SettingItemLayout">
+
+                <TextView
+                    style="@style/SettingItemTitleTextView"
+                    android:text="@string/settings_title_assistance_mode"/>
+
+                <CheckBox
+                    android:id="@+id/switch_assistance"
+                    style="@style/SettingSwitchButton"/>
+            </LinearLayout>
+
+            <include
+                android:id="@+id/layout_assistance"
+                layout="@layout/layout_assistance_settings"/>
+
+            <View style="@style/DividerWidthView"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

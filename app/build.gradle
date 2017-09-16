@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.droi.edriver"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 18
+        versionName "1.2.18.0602"
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("edriver_key")
+            storePassword "tyd1111"
+            keyAlias "edriver"
+            keyPassword "tyd1111"
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.release
+            versionNameSuffix "_debug"
+        }
+        release {
+            signingConfig signingConfigs.release
+        }
+        beta {
+            signingConfig signingConfigs.release
+            versionNameSuffix "_beta"
+        }
+        alpha {
+            signingConfig signingConfigs.release
+            versionNameSuffix "_alpha"
+        }
+    }
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                //这里修改apk文件名
+                def fileName = "EDriver-" + defaultConfig.versionName + "_" + buildType.name + ".apk"
+                output.outputFile = new File(outputFile.parent, fileName)
+            }
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['src/main/jniLibs']
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile files('libs/volley.jar')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:support-v4:23.2.1'
+    compile 'com.droi.library:pickerviews:1.0'
+    compile project(':libDroiAccount')
+    compile files('libs/adroi.sdk.jar')
+    compile project(':adasFrameProcessor')
+    compile files('libs/universal-image-loader-1.9.5.jar')
+}

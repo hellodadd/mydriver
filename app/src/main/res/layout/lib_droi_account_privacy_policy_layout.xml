@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/account_actionbar_height"
+        android:background="@color/actionbar_background_color">
+
+        <TextView
+            android:id="@+id/title_imageview"
+            style="@style/ActionbarBackTextView"
+            android:onClick="onBack"/>
+
+        <TextView
+            android:id="@+id/actionbar_title"
+            style="@style/ActionbarTitleTextView"
+            android:text="@string/lib_droi_account_user_items_privacy_text"/>
+
+        <View
+            style="@style/DividerWidthView"
+            android:layout_alignParentBottom="true"
+            android:background="@color/actionbar_bottom_color"/>
+
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/lib_droi_account_webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

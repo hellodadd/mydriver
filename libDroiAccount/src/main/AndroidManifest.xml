@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="com.droi.account"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.ACCOUNT_MANAGER"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+
+    <application
+        android:allowBackup="true">
+
+        <provider
+            android:name="com.droi.account.DroiAccountProvider"
+            android:authorities="com.droi.edriver.droidatabase"
+            android:exported="true"/>
+
+        <!-- 登录页面竖屏全屏显示 使用 Layout下资源布局文件 -->
+        <activity
+            android:name="com.droi.account.authenticator.AuthenticatorActivity"
+            android:configChanges="orientation"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/lib_droi_account_ic_launcher"
+            android:label="@string/lib_droi_account_app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+        </activity>
+        <!-- 登录页面横屏弹框显示 使用 Layout-land下资源布局文件 -->
+        <!--<activity
+            android:name="com.droi.account.authenticator.AuthenticatorActivity"
+            android:configChanges="orientation"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/lib_droi_account_ic_launcher"
+            android:label="@string/lib_droi_account_app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar">
+        </activity>-->
+        <activity
+            android:name="com.droi.account.setup.ActivitySettings"
+            android:configChanges="orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:label="@string/lib_droi_account_settings_activity_title"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.freeme.account.sdk.activity.setup"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.droi.account.setup.AccountSettings"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:label="@string/lib_droi_account_settings_activity_title"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.droi.account.login.RegisterActivity"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/lib_droi_account_ic_launcher"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.droi.account.login.AccountCheckActivity"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/lib_droi_account_ic_launcher"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.droi.account.login.SecurityCodeActivity"
+            android:configChanges="orientation|screenSize"
+            android:icon="@drawable/lib_droi_account_ic_launcher"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.droi.account.login.PasswordSetActivity"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/lib_droi_account_ic_launcher"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible">
+        </activity>
+        <activity
+            android:name="com.droi.account.login.WelcomeActivity"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/lib_droi_account_ic_launcher"
+            android:label="@string/lib_droi_account_login_account_title"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.droi.account.login.DeleteAccountActivity"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/lib_droi_account_ic_launcher"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.droi.account.login.FindCodeActivity"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/lib_droi_account_ic_launcher"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.droi.account.login.FindCodeEmailActivity"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/lib_droi_account_ic_launcher"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.droi.account.login.SendEmailActivity"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/lib_droi_account_ic_launcher"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.droi.account.setup.SetPwdWhenBinded"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/lib_droi_account_ic_launcher"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.droi.account.setup.TestGetBindInfo"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/lib_droi_account_ic_launcher"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.droi.account.setup.UserInfoUpdated"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/lib_droi_account_ic_launcher"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.droi.account.setup.EditAddressActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/lib_droi_account_edit_address_title"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.droi.account.setup.AddressListActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/lib_droi_account_my_address_text"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.droi.account.login.PrivacyPolicy"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/lib_droi_account_ic_launcher"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.droi.account.login.SendActiveEmailActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.droi.account.login.EmailInputActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.droi.account.updateself.UpdateSelfActivity"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/lib_droi_account_ic_launcher"
+            android:screenOrientation="portrait">
+        </activity>
+        <!-- qq login begin -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="false"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:scheme="tencent1103957320"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.droi.account.shared.ChangeAccountActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/lib_droi_account_change_account_title"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="droi.account.intent.action.CHANGE_ACCOUNT"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <!-- public api -->
+        <activity
+            android:name="com.droi.account.procedure.BindAccountActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity
+            android:name="com.droi.account.auth.DroiAuthPage"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+
+        <!-- weibo auth begin -->
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+        </activity>
+        <activity
+            android:name="com.droi.account.weibosdk.WeiboBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden">
+        </activity>
+        <!-- weibo auth end -->
+
+        <service
+            android:name="com.droi.account.authenticator.AuthenticationService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/lib_droi_account_authenticator"/>
+        </service>
+
+        <receiver android:name="com.droi.account.shared.DroiAccountReceiver">
+            <intent-filter>
+                <action android:name="android.accounts.LOGIN_ACCOUNTS_CHANGED"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

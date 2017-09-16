@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/root_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/settings_background_color"
+    android:orientation="vertical"
+    tools:context="com.droi.edriver.ui.EditActivity">
+
+    <include layout="@layout/layout_actionbar"/>
+
+    <View
+        style="@style/DividerWidthView"
+        android:layout_marginTop="22dp"/>
+
+    <EditText
+        android:id="@+id/et_edit_value"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_list_item_height"
+        android:background="@android:color/white"
+        android:imeOptions="flagNoExtractUi|flagNoFullscreen"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textSize="16dp"/>
+
+    <View style="@style/DividerWidthView"/>
+
+</LinearLayout>

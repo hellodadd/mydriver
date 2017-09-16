@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="radio_button_selected_color">#11b92d</color>
+    <color name="radio_button_unselected_color">@android:color/transparent</color>
+    <color name="title_bar_textcolor">#ffffff</color>
+    <color name="progress_color">#35ff35</color>
+    <color name="actionbar_background_color">#f6f6f6</color>
+    <color name="actionbar_bottom_color">#c8c7cc</color>
+    <color name="actionbar_backtext_color">#13cb32</color>
+    <color name="actionbar_backtext_pressed_color">#5ae67d</color>
+    <color name="settings_background_color">#efeff4</color>
+    <color name="main_style_background_color">#efeff4</color>
+    <color name="settings_item_divider_color">#dddddd</color>
+    <color name="save_titlebar_textcolor">#13cb32</color>
+    <color name="close_screen_color">#ff000000</color>
+    <color name="guide_textcolor">#40d113</color>
+    <color name="red">#FF0000</color>
+</resources>
